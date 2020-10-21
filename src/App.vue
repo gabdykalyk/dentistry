@@ -4,6 +4,14 @@
     </app-header>
     <app-banner>
     </app-banner>
+    <app-experience> 
+    </app-experience>
+    <app-features>
+    </app-features>
+    <app-photoes>
+    </app-photoes>
+    <app-footer>
+    </app-footer>
   </div>
 </template>
 
