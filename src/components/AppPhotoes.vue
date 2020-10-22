@@ -19,6 +19,5 @@ export default {
         padding-bottom: 50px;
         background-color: #F1F1F1;
         text-align: center;
-        padding-left: 70px;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div class="main">
   <div class="container">
-    <header class="header">
+    <header class="header" @scroll="scroll">
       <img src="../assets/images/Logo.png" alt="">
       <nav>
         <ul>
@@ -51,14 +51,32 @@
 
 <script>
 export default {
-
+  name: 'AppHeader',
+  data() {
+    return {
+      msg: 'hi'
+    }
+  },
+  methods: {
+    scroll() {
+      if(window.scrollTop()>300){
+        ('#elem').show()
+        console.log('hello')
+      }
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
 .main {
   box-shadow: 0px 3px 5px -4px rgba(0,0,0,0.75);
-  display: none;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
   .container {
     font-size: 14px;
