@@ -86,7 +86,6 @@ export default {
     padding-bottom: 40px;
 
     .experience__main {
-        padding-left: 40px;
         margin-top: 40px;
     }
     .experience__title {
@@ -151,6 +150,25 @@ export default {
         &::before {
             display: none;
         }
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience .experience__item .experience__year {
+        white-space: nowrap;
+    }
+
+    .experience .experience__item .experience__logo::before {
+      height: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience .experience__item .experience__info {
+        font-size: 15px;
+    }
+    .experience .experience__item .experience__sub {
+        font-size: 12px;
     }
 }
 </style>

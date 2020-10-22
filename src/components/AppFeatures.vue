@@ -118,4 +118,25 @@ export default {
         }
     }
 }
+
+@media (max-width: 992px) {
+    .features .features__row {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .features .features__item {
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .features .features__item img {
+        margin: 0;
+    }
+
+    .features .features__item .image__right {
+        margin: 0;
+    }
+}
 </style>

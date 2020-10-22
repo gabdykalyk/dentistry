@@ -20,6 +20,14 @@
               </li>
             </ul>
           </nav>
+          <div class="banner__top">
+          <div class="banner__name">
+            Габдыкалык Орал Арболович
+          </div>
+          <div class="banner__bottom">
+            Врач-стоматолог, терапевт, хирург, ортопед
+          </div>
+        </div>
         </div>
         <div class="banner__contacts">
           <div class="banner__phone">
@@ -155,6 +163,119 @@ export default {
     .banner__bottom {
       font-size: 14px;
       text-align: center;
+    }
+  }
+
+  .banner__top {
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .banner__main {
+      .banner__prof {
+        font-size: 45px;
+      }
+
+      .banner__image img {
+        width: 295px;
+      }
+
+      .banner__image {
+        right: 170px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .banner .banner__menu nav {
+      display: none;
+    }
+
+    .banner__side {
+      display: none;
+    }
+
+    .banner__top {
+      color: #ffffff;
+      display: block;
+      .banner__name {
+        background-color: #1C263F;
+        padding: 8px 21px;
+        font-size: 14px;
+        padding: 10px 12px;
+        text-align: center;
+      }
+
+    .banner__bottom {
+        font-size: 14px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+
+    .banner__top .banner__bottom {
+      font-size: 11px;
+    }
+
+    .banner .banner__menu {
+      align-items: center;
+    }
+
+    .banner__main .banner__image {
+      right: 85px;
+    }
+
+    .banner .banner__header {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .banner__main .banner__image {
+      right: 8px;
+    }
+
+    .banner__main .banner__image img {
+      width: 252px;
+    }
+
+    .banner__main .banner__prof {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner__main .banner__prof {
+      font-size: 28px;
+    }
+    .banner__main .banner__consult {
+      font-size: 11px;
+    }
+    .banner__main .banner__image img {
+      width: 218px;
+    }
+    .banner__main {
+      padding-left: 30px;
+    }
+  }
+  @media (max-width: 529px) {
+    .banner__phone {
+      font-size: 13px;
+    }
+
+    .banner__city {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 524px) {
+    .banner__main .banner__prof {
+      font-size: 24px;
+    }
+    .banner__main .banner__consult {
+      font-size: 9px;
+    }
+    .banner__main .banner__image img {
+      width: 207px;
     }
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
-<div class="main">
+<div v-bind:class='{appear: scrolled}' class="main">
   <div class="container">
-    <header class="header" @scroll="scroll">
+    <header class="header">
       <img src="../assets/images/Logo.png" alt="">
       <nav>
         <ul>
@@ -54,15 +54,13 @@ export default {
   name: 'AppHeader',
   data() {
     return {
-      msg: 'hi'
+      msg: 'hi',
+      scrolled: false
     }
   },
   methods: {
-    scroll() {
-      if(window.scrollTop()>300){
-        ('#elem').show()
-        console.log('hello')
-      }
+    scrolling() {
+      
     }
   }
 }
@@ -77,6 +75,7 @@ export default {
   left: 0;
   right: 0;
   z-index: 2;
+  display: none;
 }
   .container {
     font-size: 14px;
@@ -123,4 +122,8 @@ export default {
       }
     }
   }
+
+.appear {
+  display: block;
+}
 </style>
