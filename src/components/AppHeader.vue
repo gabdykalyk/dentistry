@@ -2,7 +2,7 @@
 <div v-bind:class='{appear: scrolled}' class="main">
   <div class="container">
     <header class="header">
-      <img src="../assets/images/Logo.png" alt="">
+      <img class="header__logo" src="../assets/images/tooth.svg" alt="">
       <nav>
         <ul>
           <li>
@@ -76,6 +76,10 @@ export default {
   right: 0;
   z-index: 2;
   display: none;
+}
+
+.header__logo {
+  width: 63px;
 }
   .container {
     font-size: 14px;

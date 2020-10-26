@@ -3,7 +3,7 @@
     <div class="container">
       <div class="banner__header">
         <div class="banner__menu">
-          <img src="../assets/images/Logo.png" alt="">
+          <img class="banner__logo" src="../assets/images/tooth.svg" alt="">
           <nav>
             <ul>
               <li>
@@ -12,12 +12,17 @@
               <li>
                 Услуги
               </li>
-              <li>
+              <a href="">
+                <li>
+                  Записаться на приём
+                </li>
+              </a>
+              <!-- <li>
                 Сертификаты
               </li>
               <li>
                 Кейсы
-              </li>
+              </li> -->
             </ul>
           </nav>
           <div class="banner__top">
@@ -73,6 +78,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.banner__logo {
+  width: 63px;
+}
   .banner {
     padding-top: 30px;
     .banner__menu {
