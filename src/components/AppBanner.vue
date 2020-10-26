@@ -6,13 +6,17 @@
           <img class="banner__logo" src="../assets/images/tooth.svg" alt="">
           <nav>
             <ul>
-              <li>
-                Биография
-              </li>
-              <li>
-                Услуги
-              </li>
-              <a href="">
+              <a href="#bio">
+                <li>
+                  Биография
+                </li>
+              </a>
+              <a href="#features">
+                <li>
+                  Услуги
+                </li>
+              </a>
+              <a href="#foot">
                 <li>
                   Записаться на приём
                 </li>
@@ -32,11 +36,21 @@
           <div class="banner__bottom">
             Врач-стоматолог, терапевт, хирург, ортопед
           </div>
+          <div class="banner__contacts--mob">
+            <div class="banner__phone">
+              <a href="tel:+77001411962" class="phone__mobi">
+                +7 (700) 141-19-62
+              </a>
+               г. Алматы
+            </div>
+          </div>
         </div>
         </div>
         <div class="banner__contacts">
           <div class="banner__phone">
-            +7 (700) 141-19-60
+            <a href="tel:+77001411962">
+              +7 (700) 141-19-62
+            </a>
           </div>
           <div class="banner__city">
             г. Алматы
@@ -81,6 +95,10 @@ export default {
 a {
   text-decoration: none;
   color: unset;
+}
+
+.banner__contacts--mob {
+  display: none;
 }
 
 .banner__logo {
@@ -289,6 +307,65 @@ a {
     }
     .banner__main .banner__image img {
       width: 207px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .banner__contacts {
+      display: none;
+    }
+
+    .banner__menu {
+      margin: 0 auto;
+    }
+    
+    .banner__contacts--mob {
+      color: #000000;
+      text-align: center;
+      display: block;
+    }
+
+    .phone__mobi {
+      margin-right: 15px;
+    }
+  }
+
+  @media (max-width: 481px) {
+    .banner__main .banner__image img {
+      width: 165px;
+    }
+
+    .banner__main {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 437px) {
+    .banner__main {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-bottom: 10px; 
+    }
+
+    .banner__main .banner__image img {
+      width: 140px;
+    }
+  }
+
+  @media (max-width: 394px) {
+    .banner__main .banner__prof {
+      font-size: 20px;
+    }
+
+    .banner__main .banner__consult {
+      padding: 5px 5px;
+      border-radius: 5px;
+      margin-top: 7px;
+    }
+
+    .banner__main .banner__image img {
+      width: 104px;
     }
   }
 </style>

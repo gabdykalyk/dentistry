@@ -1,5 +1,5 @@
 <template>
-    <div class="experience">
+    <div class="experience" id="bio">
         <div class="container">
             <div class="experience__title">
                 Моя профессиональная жизнь 
@@ -8,6 +8,68 @@
                 </div>
             </div>
             <div class="experience__main">
+                <div class="experience__item">
+                    <div class="experience__year">
+                        2014 - 2019
+                    </div>
+                    <div class="experience__info">
+                        Бакалавриат Казахского Национального Медицинского Университета <br>
+                        имени С.Д. Асфендиярова
+                        <div class="experience__sub">
+                            Бакалавр Стоматологии
+                        </div>
+                    </div>
+                    <div class="experience__logo">
+                        <img src="../assets/images/asf.png" alt="">
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <div class="experience__year">
+                        2019 - 2020
+                    </div>
+                    <div class="experience__info">
+                        Интернатура Казахского Национального Медицинского Университета <br>
+                        имени С.Д. Асфендиярова
+                        <div class="experience__sub">
+                            Врач-стоматолог общей практики <br>
+                            Взрослая и детская
+                        </div>
+                    </div>
+                    <div class="experience__logo">
+                        <img src="../assets/images/asf.png" alt="">
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <div class="experience__year">
+                        2019 - 2020
+                    </div>
+                    <div class="experience__info">
+                        Центральная стоматологическая поликлиника города Алматы
+                        <div class="experience__sub">
+                            Детская хирургия и терапия
+                        </div>
+                    </div>
+                    <div class="experience__logo experience__logo--central">
+                        <img src="../assets/images/central.png" alt="">
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <div class="experience__year">
+                        2019 - 2020
+                    </div>
+                    <div class="experience__info">
+                        Стоматологическая клиника профессора Рузуддинова
+                        <div class="experience__sub">
+                            Врач-стоматолог, терапевт, хирург, ортопед
+                        </div>
+                    </div>
+                    <div class="experience__logo experience__logo--ruz">
+                        <img src="../assets/images/ruz.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__main--mob">
                 <div class="experience__item">
                     <div class="experience__year">
                         2014 - 2019
@@ -164,11 +226,64 @@ export default {
 }
 
 @media (max-width: 768px) {
+    .experience .container .experience__main {
+        display: none;
+    }
+
+    .experience__main--mob {
+        display: block;
+    }
+
+    .experience .experience__item .experience__logo {
+        left: 0;
+        top: 25px;
+    }
+
+    .experience .experience__item .experience__info {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .experience .experience__item {
+        display: block;
+    }
+
+    .experience .experience__item .experience__year {
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 665px) {
     .experience .experience__item .experience__info {
         font-size: 15px;
     }
-    .experience .experience__item .experience__sub {
-        font-size: 12px;
+}
+
+@media (max-width: 490px) {
+    .experience .experience__logo img {
+        width: 70%;
+    }
+
+    .experience .experience__item .experience__logo::before {
+        left: 34%;
+    }
+}
+
+@media (max-width: 394px) {
+    .experience .experience__title {
+      font-size: 25px;
+    }
+}
+
+@media (max-width: 374px) {
+    .experience .experience__item .experience__logo::before {
+        height: 175px;
     }
 }
 </style>

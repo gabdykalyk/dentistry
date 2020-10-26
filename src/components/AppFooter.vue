@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footer" id="foot">
         <div class="footer__title">
             Обращайтесь по любым <br>
             вопросам!
@@ -20,17 +20,17 @@
             <b>Email:</b> gabdykalyk@gmail.com
         </div>
         <div class="social">
-            <a href="">
-            <img src="../assets/images/tg.svg" alt="">
+            <a href="http://t.me/drgabdykalyk" target="_blank">
+                <img src="../assets/images/tg.svg" alt="">
             </a>
-            <a href="">
-            <img src="../assets/images/inst.svg" alt="">
+            <a href="http://instagram.com/gabdykalyk_" target="_blank">
+                <img src="../assets/images/inst.svg" alt="">
             </a>
-            <a href="">
-            <img src="../assets/images/wts.svg" alt="">
+            <a href="https://wa.me/message/MTB34XOZEIJUK1" target="_blank">
+                <img src="../assets/images/wts.svg" alt="">
             </a>
-            <a href="">
-            <img src="../assets/images/fb.svg" alt="">
+            <a href="https://www.facebook.com/Dr.Gabdykalyk" target="_blank">
+                <img src="../assets/images/fb.svg" alt="">
             </a>
         </div>
     </div>
@@ -75,5 +75,12 @@ export default {
             opacity: .7;
         }
         }
+}
+
+
+@media (max-width: 394px) {
+    .footer .footer__title {
+        font-size: 25px;
+    }
 }
 </style>
